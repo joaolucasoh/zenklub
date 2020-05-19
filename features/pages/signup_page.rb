@@ -43,7 +43,7 @@ class Signup < SitePrism::Page
     input_email.set(Faker::Internet.email)
     input_password.set(Faker::Internet.password(min_length: 8))
     input_phone.set('(11) 4111-0900')
-    let_signup?
+    lets_signup?
   end
 
   def account_created?

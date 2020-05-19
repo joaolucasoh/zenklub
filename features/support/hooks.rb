@@ -15,8 +15,9 @@ Before('@happylogin') do
   @zenklub.login.logged?
 end
 
-After('@clear') do
-  Capybara.execute_script 'localStorage.clear()'
+After do
+  page.execute_script('localStorage.clear()')
+  page.driver.quit
 end
 
 After do
@@ -27,8 +28,8 @@ end
 
 at_exit do
   @infos = {
-    'Cliente' => 'Zenklub'.upcase,
-    'Data do Teste' => Time.now.to_s
+    'Client' => 'Zenklub'.upcase,
+    'Test Date' => Time.now.to_s
   }
 
   ReportBuilder.configure do |config|

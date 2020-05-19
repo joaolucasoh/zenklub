@@ -1,8 +1,8 @@
 # language: en
-@logins
+
 Feature: Log in correctly on the portal.
 
-@login @clear
+@login
 Scenario Outline: Log in correctly with valid credentials
     When I am on the portal and enter with '<email>' and '<password>'
     Then you should log in normally
