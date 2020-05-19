@@ -21,7 +21,7 @@ Inside the Setup folder, there is a step-by-step guide for installing all depend
 
 ### Clone the project:
 
-https://github.com/joaolucasoh/magalu.git
+https://github.com/joaolucasoh/zenklub.git
 
 ### Installing all gems from the gemfile file:
 
